@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './styles.css'
 
-export default function SearchBar() {
+export default function SearchBar(props) {
 
 
     const [input, setInput] = useState('')
@@ -9,6 +9,7 @@ export default function SearchBar() {
     function formSubmit(e) {
         e.preventDefault()
         console.log('form submit: ' + input)
+        props.onSubmit(input)
     }
 
     return (
