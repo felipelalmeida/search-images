@@ -1,0 +1,24 @@
+.search-bar{
+    display: flex;
+    align-items: stretch;
+    height: 6.25rem;
+    background-color: antiquewhite;
+}
+
+.search-bar input{
+    display: flex;
+    flex: 1;
+    border: none;
+    margin: 1.875rem 0 1.875rem 1.875rem;
+    border-radius: 0.313rem 0 0 0.313rem ;
+}
+
+.search-bar button{
+    cursor: pointer;
+    border: none;
+    border-radius: 0 0.313rem 0.313rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.875rem 1.875rem 1.875rem 0;
+}
