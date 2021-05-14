@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f2f3f5;
+  background-color: #161615;
 }
 
 code {
@@ -19,7 +19,7 @@ code {
 
 .cards a{
   text-decoration: none;
-  color: #000;
+  color: #605b53;
 }
 
 .zoom-image {
@@ -30,6 +30,7 @@ code {
 .info-image {
   display: flex;
   justify-content: center;
+  background-color: #1c1c1c;
 }
 
 .image {
@@ -37,14 +38,8 @@ code {
   width: 100%;
   object-fit: cover;
   overflow: hidden;
-  /* -webkit-transition: -webkit-transform .5s ease; */
   transition: transform .5s ease;
 }
-
-/* .image:hover{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-} */
 
 .image:hover {
   overflow: hidden;
