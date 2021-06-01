@@ -19,7 +19,7 @@ const SearchBar = ({ setPesquisa, setPage }) => {
             <form onSubmit={buscarImagens} className="search-bar">
                 <input type="text" placeholder="Digite sua pesquisa"
                     value={input} onChange={(e) => setInput(e.target.value)} />
-                <button type="submit">Pesquisar</button>
+                <button type="submit"><img src="/search.svg" alt="search" /></button>
             </form>
         </div>
     )

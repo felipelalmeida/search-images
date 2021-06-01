@@ -8,7 +8,6 @@ function App() {
   const [page, setPage] = useState(1)
   const [pesquisa, setPesquisa] = useState('')
   const [totalPages, setTotalPages] = useState(0)
-  const feather = require('feather-icons')
 
   useEffect(() => {
     const consultaAPI = async () => {
@@ -55,13 +54,13 @@ function App() {
           )
         })}
       </section>
-      { (totalPages !== 0) && 
+      { (totalPages !== 0) &&
         <div className="pagination">
-          <button onClick={previousPage}>Anterior</button>
+          <button onClick={previousPage}><img src="/arrow-left.svg" alt="previous" /></button>
           <p> {page} </p>
-          <button onClick={nextPage}>Próxima</button>
+          <button onClick={nextPage}><img src="/arrow-right.svg" alt="next" /></button>
         </div>
-      
+
       }
     </div >
   );
