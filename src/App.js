@@ -8,6 +8,7 @@ function App() {
   const [page, setPage] = useState(1)
   const [pesquisa, setPesquisa] = useState('')
   const [totalPages, setTotalPages] = useState(0)
+  const feather = require('feather-icons')
 
   useEffect(() => {
     const consultaAPI = async () => {
