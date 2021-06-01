@@ -45,3 +45,12 @@ code {
   overflow: hidden;
   transform: scale(1.16);
 }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination p {
+  color: #fff;
+}
