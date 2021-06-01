@@ -17,7 +17,7 @@ code {
   gap: 20px;
 }
 
-.cards a{
+.cards a {
   text-decoration: none;
   color: #605b53;
 }
@@ -46,11 +46,25 @@ code {
   transform: scale(1.16);
 }
 
-.pagination{
+.pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination button {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .pagination p {
   color: #fff;
+  display: flex;
 }
