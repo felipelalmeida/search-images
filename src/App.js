@@ -56,9 +56,9 @@ function App() {
       </section>
       { (totalPages !== 0) &&
         <div className="pagination">
-          <button onClick={previousPage}><img src="/arrow-left.svg" alt="previous" /></button>
-          <p> {page} </p>
-          <button onClick={nextPage}><img src="/arrow-right.svg" alt="next" /></button>
+          <button onClick={previousPage} disabled={page === 1}><img src="/arrow-left.svg" alt="previous" /></button>
+          <p> {page} ... {totalPages} </p>
+          <button onClick={nextPage} disabled={page === totalPages}><img src="/arrow-right.svg" alt="next" /></button>
         </div>
 
       }
