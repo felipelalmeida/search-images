@@ -6,10 +6,7 @@ const SearchBar = ({ setPesquisa, setPage }) => {
 
     const buscarImagens = (e) => {
         e.preventDefault()
-        if (input === '') {
-            alert('Pesquisa vazia')
-            return
-        }
+        if (input === '') return
         setPesquisa(input)
         setPage(1)
     }
